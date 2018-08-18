@@ -14,6 +14,12 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
 
+/**
+ * Controller AOP 日志
+ * 需要添加 @EnableAspectJAutoProxy
+ * @author Fan Niu
+ * @since 2018/08/18
+ */
 @Aspect
 @Component
 public class ControllerLogAspect {
