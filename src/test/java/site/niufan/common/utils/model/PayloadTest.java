@@ -7,12 +7,12 @@ import org.junit.runners.JUnit4;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Function;
 
 import static site.niufan.common.utils.model.Payload.PayloadBuilder.integer;
 import static site.niufan.common.utils.model.Payload.PayloadBuilder.string;
 
 /**
+ * Payload 测试类
  * @author Fan Niu
  * @since 2018/8/18
  */
