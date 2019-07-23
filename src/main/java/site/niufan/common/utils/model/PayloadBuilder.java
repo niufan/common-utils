@@ -1,6 +1,6 @@
 package site.niufan.common.utils.model;
 
-import site.niufan.common.exception.category.CommonException;
+import site.niufan.common.exception.category.Failure;
 import site.niufan.common.exception.category.Success;
 import site.niufan.common.exception.message.Message;
 import site.niufan.common.exception.message.enums.DefaultIntegerFailureMessage;
@@ -23,11 +23,11 @@ public class PayloadBuilder<C, M, D, S, F>  {
         this.failure = failure;
     }
 
-    public static <DT> PayloadBuilder<String, String, DT, Success, CommonException> string() {
+    public static <DT> PayloadBuilder<String, String, DT, Success, Failure> string() {
         return builder(DefaultStringSuccessMessage.SUCCESS, DefaultStringFailureMessage.FAILURE);
     }
 
-    public static <DT> PayloadBuilder<Integer, String, DT, Success, CommonException> integer() {
+    public static <DT> PayloadBuilder<Integer, String, DT, Success, Failure> integer() {
         return builder(DefaultIntegerSuccessMessage.SUCCESS, DefaultIntegerFailureMessage.FAILURE);
     }
 
